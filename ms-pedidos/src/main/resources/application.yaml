@@ -5,9 +5,9 @@ spring:
   application:
     name: ms-pedidos
   r2dbc:
-    url: r2dbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:postgres}?sslMode=${DB_SSL_MODE:disable}
-    username: ${DB_USER:postgres}
-    password: ${DB_PASSWORD:password}
+    url: r2dbc:postgresql://ep-morning-night-at61l5h9-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslMode=require
+    username: neondb_owner
+    password: npg_uUDlyeM9qgr7
 
 servicios:
   productos-url: ${PRODUCTOS_SERVICE_URL:http://localhost:8081}
